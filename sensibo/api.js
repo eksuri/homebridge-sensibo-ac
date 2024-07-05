@@ -119,9 +119,7 @@ async function apiRequest(method, url, data) {
 			method,
 			url,
 			data,
-			headers: {
-				'Accept-Encoding': 'gzip'
-			},
+			headers: { 'Accept-Encoding': 'gzip' },
 			decompress: true
 		})
 			.then(response => {
